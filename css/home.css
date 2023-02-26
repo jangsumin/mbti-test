@@ -1,0 +1,12 @@
+body {
+    background-color: #f6fcff;
+    background-image: url('../images/main_bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.character {
+    width: 100%;
+    max-width: 364px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
