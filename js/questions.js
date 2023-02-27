@@ -19,7 +19,7 @@ function renderQuestion() {
 }
 
 function nextQuestion(choiceNumber) {
-    if (currentNumber === question.length - 1) {
+    if (currentNumber === questions.length - 1) {
         showResultPage();
         return;
     }
