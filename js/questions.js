@@ -19,10 +19,18 @@ function renderQuestion() {
 }
 
 function nextQuestion(choiceNumber) {
+    if (currentNumber === question.length - 1) {
+        showResultPage();
+        return;
+    }
     const question = questions[currentNumber];
     mbti = mbti + question.choices[choiceNumber].value;
     currentNumber += 1;
     renderQuestion();
+}
+
+function showResultPage() {
+    location.href = './results.html?mbti=' + mbti; // 쿼리스트링
 }
 
 choice1El.addEventListener('click', function () {
